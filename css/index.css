@@ -54,6 +54,36 @@ body{
 }
 
 
+/*----------------------------------- Social Media Icon -----------------------------------*/
+.social {
+	text-align:center;
+	padding-bottom:15px;
+	padding-top: 15px;
+  
+  }
+  
+.social > a {
+	font-size:30px;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	border:1px solid #ccc;
+	margin:0 8px;
+	color:white;
+	line-height:10px;
+	display:inline-block;
+	text-align:center;
+	opacity:0.75;
+	padding-top: 5px;
+}
+
+.social > a:hover {
+	opacity:0.9;
+	color: white;
+}
+
+
+
 /*----------------------------------- Header -----------------------------------*/
 
 header{
@@ -308,6 +338,15 @@ nav a:hover::before{
 	animation-delay: 4s;
 }
 
+#banner-social{
+	text-align: left;
+	animation-name: fadeBottom;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	animation-delay: 6s;
+}
+
 
 /*--------------- Responsive ---------------*/
 
@@ -353,11 +392,30 @@ nav a:hover::before{
 
 .card-project{
 	margin: 0 auto;
-	height: 430px;
+	height: 470px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	opacity: 0;
 	width: 18rem;
+	font-family: Roboto;
+	text-align: left;
+	box-shadow: 3px 3px #444;
+	transition: all .5s;
+	border: 2px solid #444;
+	transition: all .3s;
+}
+
+.card-project:hover{
+	box-shadow: 5px 5px  #444;
+}
+
+.card-project h5, h6{
+	text-align: left;
+	font-weight: bold;
+}
+
+.card-project p{
+	font-size: 14px;
 }
 
 .card-project.active{
@@ -374,6 +432,15 @@ nav a:hover::before{
 .card-img-icon{
 	width: 50px;
 	height: 50px;
+	display: flex; 
+	padding-bottom: 10px;
+	align-items: center;
+}
+
+.card-img-icon img{
+	width: 40px;
+	height: auto;
+	margin-right: 5px;
 }
 
 .project-link{
@@ -381,6 +448,11 @@ nav a:hover::before{
 	bottom: 0;
 	left: 0;
 	padding: 10px 10px 10px 10px;
+	color: black;
+}
+
+.project-link:hover{
+	color: black;
 }
 
 
@@ -390,8 +462,6 @@ nav a:hover::before{
 @media only screen and (max-width: 768px){
 
 	/*--------------- Project ---------------*/
-
-
 
 }
 
@@ -450,8 +520,8 @@ nav a:hover::before{
 }
 
 .box-about-img:hover{
-	box-shadow: 10px 10px  #55d6aa;
-	transform: scale(1.05);
+	box-shadow: 8px 8px  #55d6aa;
+	transform: scale(1.02);
 }
 
 .col-about-img img{
@@ -477,11 +547,11 @@ nav a:hover::before{
 
 	/*--------------- About Me ---------------*/
 	.section-about h1{
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	.section-about h2{
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 }
@@ -504,14 +574,42 @@ nav a:hover::before{
 	font-weight: bold;
 }
 
+.contact-details{
+	width: 100%;
+	height: auto;
+	background-color: #222;
+	color: white;
+	padding: 50px 30px 30px 50px;
+	box-shadow: 5px 5px #787878;
+}
+
 .btn-submit{
 	background-color: #55d6aa;
 	border: solid 2px #222;
 	transition: 0.5s;
+	float: right;
 }
 
 .btn-submit:hover{
 	background-color: #222;
+	color: white;
+}
+
+.form-contact input, textarea{
+	box-shadow: 3px 3px #222;
+}
+
+#contact-social{
+	text-align: left;
+}
+
+#contact-social > a {
+	border:1px solid white;
+	color:white;
+}
+
+#contact-social > a:hover {
+	opacity:0.9;
 	color: white;
 }
 
@@ -530,11 +628,11 @@ nav a:hover::before{
 
 	/*--------------- Contact Me ---------------*/
 	.section-contact h1{
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	.section-contact h2{
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 }
@@ -552,37 +650,8 @@ nav a:hover::before{
 .footer{
 	width: 80%;
 	margin: 0 auto;
-}
-
-.footer-desc{
+	font-family: Roboto;
 	color: white;
-}
-
-.box-footer .social {
-  text-align:center;
-  padding-bottom:15px;
-  padding-top: 15px;
-
-}
-
-.box-footer .social > a {
-  font-size:30px;
-  width:40px;
-  height:40px;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:white;
-  line-height:10px;
-  display:inline-block;
-  text-align:center;
-  opacity:0.75;
-  padding-top: 5px;
-}
-
-.box-footer .social > a:hover {
-  opacity:0.9;
-  color: white;
 }
 
 .box-footer .copyright {
@@ -612,7 +681,13 @@ nav a:hover::before{
 @media only screen and (max-width: 400px){
 
 	/*--------------- Footer ---------------*/
+	.footer h4{
+		font-size: 18px;
+	}
 
+	.footer p{
+
+	}
 }
 
 
