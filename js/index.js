@@ -20,7 +20,7 @@ $(document).ready(function(){
 	/*-------------------- Click to display --------------------*/
 	jQuery.fx.off = true;
 
-	$("#btn").on('click', function(){
+	$("#btn-hamburger").on('click', function(){
 		$(".mobile-nav").toggle("#display-mobile-nav");
 		$(".overlay").toggle("#display-overlay");
 

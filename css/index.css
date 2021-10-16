@@ -136,18 +136,13 @@ nav a:hover::before{
 	width: 100%;
 }
 
-label #btn, label #cancel{
+#btn-hamburger{
 	color: white;
 	font-size: 30px;
 	margin-right: 40px;
 	cursor: pointer;
 	margin: 0 auto;
 	padding-top: 15px;
-	display: none;
-}
-
-
-#check{
 	display: none;
 }
 
@@ -218,7 +213,7 @@ label #btn, label #cancel{
 		display: none;
 	}
 
-	label #btn{
+	#btn-hamburger{
 		display: block;
 	}
 
@@ -260,6 +255,7 @@ label #btn, label #cancel{
 
 /*----------------------------------- Banner -----------------------------------*/
 .section-banner{
+	position: fixed;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	margin: 0;
