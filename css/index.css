@@ -222,25 +222,6 @@ label #btn, label #cancel{
 		display: block;
 	}
 
-	/*
-	#check:checked ~ .mobile-nav{
-		display: block;
-	}
-
-	#check:checked ~ .overlay{
-		display: block;
-	}
-	
-	#check:checked ~ label #btn{
-		display: none;
-	}
-
-	#check:checked ~ label #cancel{
-		display: block;
-	}
-	*/
-	
-
 	#display-mobile-nav{
 		display: block;
 		transition: 0s;
