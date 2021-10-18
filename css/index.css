@@ -250,10 +250,6 @@ nav a:hover::before{
 		font-size: 12px;
 	}
 
-	nav li a{
-		font-size: 10px;
-	}
-
 	#btn-hamburger{
 		display: block;
 	}
