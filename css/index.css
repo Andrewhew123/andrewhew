@@ -133,8 +133,8 @@ nav ul{
 
 nav li{
 	display: inline-block;
-	margin-left: 50px;
-	padding-top: 22px;
+	margin-left: 30px;
+	padding-top: 25px;
 	position: relative;
 }
 
@@ -143,6 +143,7 @@ nav a{
 	color: white;
 	text-transform: uppercase;
 	font-family: Roboto;
+	font-size: 15px;
 }
 
 nav a:hover{
@@ -241,6 +242,16 @@ nav a:hover::before{
 
 	nav ul{
 		display: none;
+	}
+
+	nav li{
+		margin-left: 30px;
+		padding-top: 22px;
+		font-size: 12px;
+	}
+
+	nav li a{
+		font-size: 10px;
 	}
 
 	#btn-hamburger{
