@@ -184,6 +184,7 @@ nav a:hover::before{
 .mobile-nav{
 	float: right;
 	display: none;
+	
 }
 
 .mobile-nav ul{
@@ -283,7 +284,7 @@ nav a:hover::before{
 }
 
 /*Mobile*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 480px){
 
 	/*--------------- Navigation ---------------*/
 	.logo-name{
@@ -301,15 +302,12 @@ nav a:hover::before{
 /*----------------------------------- Banner -----------------------------------*/
 .section-banner{
 	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 90px;
+	padding-bottom: 90px;
 	margin: 0;
 	background-color: #222;
 	width: 100%;
 	top: 55px;
-}
-
-.section-banner{
 	font-family: Roboto;
 	color: white;
 }
@@ -342,7 +340,7 @@ nav a:hover::before{
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
 	opacity: 0;
-	animation-delay: 2s;
+	animation-delay: 1.5s;
 }
 
 #banner-details-3{
@@ -350,7 +348,7 @@ nav a:hover::before{
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
 	opacity: 0;
-	animation-delay: 4s;
+	animation-delay: 3s;
 }
 
 #banner-social{
@@ -359,7 +357,12 @@ nav a:hover::before{
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
 	opacity: 0;
-	animation-delay: 6s;
+	animation-delay: 4.5s;
+}
+
+.col-banner-details{
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 
@@ -378,20 +381,25 @@ nav a:hover::before{
 }
 
 /*Mobile*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 480px){
 
 	/*--------------- Banner ---------------*/
 	.section-banner h1{
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	.section-banner h2{
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	.banner-img{
 		width: 100%;
 		height: auto;
+	}
+
+	.section-banner{
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 }
@@ -410,7 +418,6 @@ nav a:hover::before{
 	height: 470px;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	opacity: 0;
 	width: 18rem;
 	font-family: Roboto;
 	text-align: left;
@@ -433,11 +440,13 @@ nav a:hover::before{
 	font-size: 14px;
 }
 
+/* - use AOS
 .card-project.active{
 	animation-name: fadeBottom;
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
 }
+*/
 
 .card-img{
 	width: 100%;
@@ -477,11 +486,14 @@ nav a:hover::before{
 @media only screen and (max-width: 768px){
 
 	/*--------------- Project ---------------*/
+	.section-project h1{
+		font-size: 35px;
+	}
 
 }
 
 /*Mobile*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 480px){
 
 	/*--------------- Project ---------------*/
 	.section-project h1{
@@ -551,13 +563,15 @@ nav a:hover::before{
 @media only screen and (max-width: 768px){
 
 	/*--------------- Project ---------------*/
-
+	.section-about h1{
+		font-size: 35px;
+	}
 
 }
 
 
 /*Mobile*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 480px){
 
 
 	/*--------------- About Me ---------------*/
@@ -594,7 +608,7 @@ nav a:hover::before{
 	height: auto;
 	background-color: #222;
 	color: white;
-	padding: 50px 30px 30px 50px;
+	padding: 30px 30px 30px 30px;
 	box-shadow: 5px 5px #787878;
 }
 
@@ -634,12 +648,14 @@ nav a:hover::before{
 @media only screen and (max-width: 768px){
 
 	/*--------------- Contact Me ---------------*/
-
+	.section-contact h1{
+		font-size: 35px;
+	}
 
 }
 
 /*Mobile*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 480px){
 
 	/*--------------- Contact Me ---------------*/
 	.section-contact h1{
@@ -649,6 +665,15 @@ nav a:hover::before{
 	.section-contact h2{
 		font-size: 20px;
 	}
+
+	#contact-social{
+		text-align: center;
+	}
+
+	#contact-social a{
+		margin: 0 3px;
+	}
+
 
 }
 
@@ -693,7 +718,7 @@ nav a:hover::before{
 }
 
 /*Mobile*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 480px){
 
 	/*--------------- Footer ---------------*/
 	.footer h4{

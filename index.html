@@ -21,6 +21,9 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<!-- CSS (AOS) -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 	<!-- JS/JQ -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/index.js"></script>
@@ -117,7 +120,7 @@
 <!----- project ----->
 <section class="section-project"style="text-align: center" id="project">
 
-	<div class="container">
+	<div class="container" data-aos="fade-up">
 		<h1>< My Projects /></h1>
 
 		<div class="row align-items-center" style="text-align: center">
@@ -132,7 +135,7 @@
 						<h5>Web Development</h5>
 						<hr>
 						<h6>Home Library Application</h6>
-						<p class="card-text">Application for sharing and managing book records.</p>
+						<p class="card-text text-justify">Application for sharing and managing book records.</p>
 
 						<div class="card-img-icon">
 							<img src="images/html.png" title="Html">
@@ -158,7 +161,7 @@
 						<h5>Web Development</h5>
 						<hr>
 						<h6>Web Comic Online</h6>
-						<p class="card-text">Platform for reading comic books through online.</p>
+						<p class="card-text text-justify">Platform for reading comic books through online.</p>
 
 						<div class="card-img-icon">
 							<img src="images/html.png" title="Html">
@@ -185,7 +188,7 @@
 						<h5>Web Development</h5>
 						<hr>
 						<h6>Game Guide Web Application</h6>
-						<p class="card-text">Web application which uses a collection of multiple media sources.</p>
+						<p class="card-text text-justify">Web application which uses a collection of multiple media sources.</p>
 
 						<div class="card-img-icon">
 							<img src="images/html.png" title="Html">
@@ -212,8 +215,8 @@
 
 						<h5>Mobile Development</h5>
 						<hr>
-						<h6>Game Guide Application</h6>
-						<p class="card-text">Mobile Application which uses a collection of multiple media sources.</p>
+						<h6>Game-Guide Application</h6>
+						<p class="card-text text-justify">Mobile Application which uses of multiple media sources.</p>
 
 						<div class="card-img-icon">
 							<img src="images/java.png" title="Java">
@@ -238,11 +241,11 @@
 <!----- About Me ----->
 <section class="section-about" id="about">
 	
-	<div class="container">
+	<div class="container" data-aos="fade-up">
 		<h1>< About Me /></h1>
 
 		<div class="row align-items-center">
-			<div class="col-md-6 col-xs-12 col-about-details">
+			<div class="col-md-6 col-xs-12 col-about-details text-justify">
 				<p>I am a Software Engineering Major and I love to self-taught software/web development. I have experience in both front end & backend development. I always take initiative to learn new technologies and programming language and I love to connect with others in a part of team in order to build more amazing and facinating projects.</p>
 			</div>
 
@@ -261,7 +264,7 @@
 <!----- Contact Me ----->
 <section class="section-contact" id="contact">
 
-	<div class="container">
+	<div class="container" data-aos="fade-up">
 
 		<h1>< Contact Me /></h1>
 		<br>
@@ -270,7 +273,7 @@
 
 			<div class="col-md-6 col-xs-12 mb-5">
 				<div class="contact-details">
-					<p>I am a student who majoring Computer Science in Software Engineering and passionating in software/web development. I am looking forward for your reply.</p>
+					<p class="text-justify">I am a student who majoring Computer Science in Software Engineering and passionating in software/web development. I am looking forward for your reply.</p>
 
 					<div class="social" id="contact-social">
 						<a href="https://github.com/Andrewhew123" target="_blank" title="Github">
@@ -335,6 +338,18 @@
         <p class="copyright">Copyright &copy; 2021 All Rights Reserved by Andrew Hew for purpose of personal website.</p>
     </footer>
 </div>
+
+
+
+<!-- Javascript AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+	  offset: 120,
+	  delay: 0,
+	  duration: 1200
+  });
+</script>
 
 
 </body>
